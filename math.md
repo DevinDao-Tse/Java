@@ -3,7 +3,62 @@
 
 # Math Formulas Calculus I
 
-## Inverse Functions
+## <u> Functions </u>
+
+### Linear Functions
+
+Written as $f(x)= mx+b$ where $m$ is the slope of the linear function. 
+
+### Combining Functions
+
+Sum - $*f+g)(x) = f(x)+g(x)$
+
+Difference - $(f-g)(x) = f(x)-g(x)$
+
+Product - $(f*g)(x) = f(x)g(x)$
+
+Quotient - $\frac{x}{g}(x)=\frac{f(x)}{g(x)}$ where $g(x)\neq0$ 
+
+### Composite Functions
+
+### Exponenetial Functions
+If a > 0 and b > 0, then the properties apply:
+
+$$
+a^x+a^y=a^{x+y} \\
+\frac{a^x}{a^y}= a^{x-y} \\
+(a^x)^y= a^{x~*~y} \\
+a^x*b^x = (ab)^x \\ 
+\frac{a^x}{b^x}= (\frac{a}{b})^x
+$$
+
+
+### Logarithmic Functions
+
+_Logarithm with a base_ denoted as $\log_{a}(x)$<br>
+Inverse is denoted as $f(x)=a^x\\$
+<br> We can define
+$$\log_{a}(b) = c ~~~if~~~ b = a^c \\$$
+
+Examples.
+
+$$\log_{2}(4) = 2 ~~~~ \log_{3}(\frac{1}{3})= -1 ~~~~ log_{a}(a^{100})= 100$$
+
+#### Logarithm Properties
+
+$$
+\log_{a}(xy)= \log_{a}(x)+\log_{a}(y)\\
+\log_{a}(\frac{x}{y})= \log_{a}(x)-\log_{a}(y) \\ 
+\log_{a}(\frac{1}{x})=-\log_{a}(x)\\
+\log_{a}(x^r)= r \log_{a}(x)\\
+\log_{a}(x)= \frac{\log_{b}(x)}{\log_b{a}}
+$$
+
+
+### Inverse Functions
+
+Rewrite function as $y=f(x)$. Swap $x$ and $y$ to get $x=f(y)$. Then solve for $x$.
+
 $
 \begin{aligned}
 f(x) &= ln(8-x^3)\\
@@ -12,6 +67,10 @@ y &= ln(8-x^3)
 $
 
 ## <u> Limits </u> 
+
+A Limit can only exist if both a left and right hand equals when evaluating such that
+
+$$\lim_{x\to c+}f(x) \equiv \lim_{x\to c-}f(x)$$ 
 
 1. $\lim_{x\to c}(f(x)+ g(x))$
 2. h
@@ -45,7 +104,7 @@ Make denomator = 0
 
 
 
-## Derivatives
+## <u> Derivatives </u>
 
 - Constant Rule - If $f$ is the constant function $f(x) = c$ then 
   $$ f^\prime(x)= \frac{d}{dx}(c) = 0 $$
@@ -90,7 +149,7 @@ $\\ \begin{aligned}
 $\begin{aligned}
   g(x) & = \sqrt{x} \\
       & = x^{\frac{1}{2}} \\
-      & = \frac{1}{2}x^{\frac{1}{2}-1} \to \frac{1}{2}x^{-\frac{1}{2}} \blacktriangleright [a^{-n} = \frac{1}{a^n}] \\
+      & = \frac{1}{2}x^{\frac{1}{2}-1} \to \frac{1}{2}x^{-\frac{1}{2}} \to [a^{-n} = \frac{1}{a^n}] \\
       & = \frac{1}{2\sqrt{x}} \\
 \end{aligned}$
 
@@ -155,6 +214,24 @@ $\begin{aligned}
 
 # Math 204
 
+### System of Linear Equations
+
+
+
+$$
+\begin{aligned}
+&-x&+2y&-3z=1\\
+&2x&+ &+z=0\\  
+&3x&-4y&+4z=2
+\end{aligned}
+$$
+
+### Gaussian Elimination
+
+
+### Gauss-Jordan Elimination
+
+
 ### Matrix/Matrices
 
 $$\mathbf{X} = \left[\begin{array}
@@ -171,6 +248,89 @@ $$\mathbf{X} = \left[\begin{array}
   1&2&3
   \end{array}\right]
 $$
+
+### Tranpose and Trace
+
+### Determinants 
+
+Let $A$ be a matrix. The <u>__Determinant__</u> is denoted by $det(A)$
+<br>
+
+Determinant of (2 x 2) Matrix
+<br>
+Let $\mathbf{A} = \left[\begin{array}{rr} a&b \\ c&d \end{array}\right]$
+
+Determinant of (3 x 3) Matrix
+<br>
+Let $\mathbf{A} = \left[\begin{array}{rrr} a_{11}&a_{12}&a_{13} \\ a_{21}&a_{22}&a_{33}\\ a_{31}&a_{32}&3_{33} \end{array}\right]$
+
+Determinant of (n x n) Matrix, n >3
+
+
+### Inverse of Matrix/Matrices
+
+Inverse of (2 x 2) Matrix<br>
+<br>
+Let $\mathbf{A} = \left[\begin{array}{rr} a&b \\ c&d \end{array}\right]$
+
+ 
+### Minor and Cofactor
+Let $\mathbf{A} = \left[\begin{array}{rrr} \end{array}\right]$
+
+### Vectors 
+
+
+
+Length, Norm or Magnitude of a Vector is given by:
+$$|| \overline{v}|| = \sqrt{v_1^2+v_2^2+\dots}$$
+
+$||\frac{\overline{v}}{||\overline{v}||}||$
+
+For n-D cases
+
+$\overrightarrow{AB}=\overline{B}- \overline{A} = (B_1-A_1, B_2-A_2, B_3-A_3)$
+
+
+### Vector Space 
+
+
+A Real Vector Space, {${V;\oplus; \odot}$}
+
+$\oplus$ is known as Vector Addition and $\odot$ is known as Vector Multiplication. (Will be given if asked to prove. Any format)
+<br>
+
+
+
+### Vector Space Axioms
+
+Collection must __satisfy all 10 axioms__ to be considered a Real Vector Space. 
+
+Any __single axiom violation__ is not considered a Real Vector Space
+
+$\alpha~\oplus~\beta$
+
+$\theta$ would normally be $\equiv$ to 0 unless given 
+
+| Axiom |                                 Description                                 |                Detail                 |
+| :---: | :-------------------------------------------------------------------------: | :-----------------------------------: |
+|   1   |                            $\alpha,\beta~\in~V$                             |
+|   2   |                $\alpha~\oplus~\beta$ = $\beta~\oplus~\alpha$                |
+|   3   | $\alpha~\oplus~(\beta~\oplus \gamma) = (\alpha~\oplus~\beta)~\oplus~\gamma$ | $\gamma$ can be anything unless given |
+|   4   |                                                                             |
+|   5   |                                                                             |
+|   6   |                                                                             |
+|   7   |                                                                             |
+|   8   |                                                                             |
+|   9   |                                                                             |
+|  10   |                                                                             |
+
+Examples of Axioms
+<br>
+
+V={$~(x,y,z)~|~3x-y+5z=0~$}
+
+
+
 
 
 
