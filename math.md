@@ -11,7 +11,7 @@ Written as $f(x)= mx+b$ where $m$ is the slope of the linear function.
 
 ### Combining Functions
 
-Sum - $*f+g)(x) = f(x)+g(x)$
+Sum - $(f+g)(x) = f(x)+g(x)$
 
 Difference - $(f-g)(x) = f(x)-g(x)$
 
@@ -72,6 +72,17 @@ A Limit can only exist if both a left and right hand equals when evaluating such
 
 $$\lim_{x\to c+}f(x) \equiv \lim_{x\to c-}f(x)$$ 
 
+Where + is the right hand and - is the left hand side.
+
+Example.
+$\\\lim_{x\to5} \frac{|x-5|}{x^2-25}$
+<br>
+
+$\lim_{x\to5+} \frac{|x-5|}{x^2-25} = \frac{\cancel{x-5}}{\cancel{(x-5)}(x+5)} = \frac{1}{x+5} = \frac{1}{5+5}=\frac{1}{10}~\to$ Limit for left hand is $\frac{1}{10}$ 
+
+$\lim_{x\to5-} \frac{|x-5|}{x^2-25} = \frac{-(\cancel{x-5})}{\cancel{(x-5)}(x+5)} = \frac{-1}{x+5} = \frac{-1}{5+5}=-\frac{1}{10}~\to$ Limit for right hand is $-\frac{1}{10}\\$ 
+Therefore the limit for $\lim_{x\to5} \frac{|x-5|}{x^2-25}$ DNE (Does Not Exist)
+
 1. $\lim_{x\to c}(f(x)+ g(x))$
 2. h
 3. h
@@ -82,10 +93,7 @@ $$\lim_{x\to c+}f(x) \equiv \lim_{x\to c-}f(x)$$
 8. j
 
 
-$\lim_{x\to5} \frac{|x-5|}{x^2-25}$
-<br>
 
-$\lim_{x\to5+} \frac{|x-5|}{x^2-25} = \frac{\cancel{x-5}}{\cancel{(x-5)}(x+5)} = \frac{1}{x+5}$ 
 
 ### Tangent Line
 
@@ -93,6 +101,16 @@ $f^\prime(x) = m \to(slope)$
 
 Equation $\to y-y_{1} = m(x-x_{1})$ where $x_{1}, y_{1}$ is given Point $P(x,y)$
 
+Example. _Equation of Tangent Line given point._ $y=1+2x-x^3$, (1,2)
+
+Find derivative of function $f(x)=1+2x-x^3\\$
+$f\prime(x)=2-3x^2\\$
+$f\prime(1)=2-3(1)^2\\$
+$f\prime(1)=-1\to \text{slope for tangent equation}\\$
+
+
+$y=mx+b\to 2=-1(1)+b\to 2=-1+b\to b=-3\\$
+$y=-x-3$ is the equation of tangent line
 
 ## <u> Horizontal and Vertical Asymptopes </u>
 
@@ -116,6 +134,15 @@ Make denomator = 0
   $$ $$
 - Product Rule -
   $$ $$
+  
+  Examples
+  
+  $\begin{aligned}
+  g(x)&=(5x^2−5x−3)e^x\\
+  g\prime(x)&=e^x*\frac{d}{dx}(5x^2−5x−3)+(5x^2−5x−3)*\frac{d}{dx}e^x\\
+  g\prime(x)&=e^x(5*2x-5)+(5x^2−5x−3)*\frac{d}{dx}e^x\\
+  g\prime(x)&=(5x^2+5x-8)e^x
+  \end{aligned}$
 
 - Sum Rule - if $f$ and $g$ are differentiable functions that 
   $$ \frac{d}{dx}(f(x)+g(x)) = \frac{d}{dx}f(x)+\frac{d}{dx}g(x)= f^\prime(x)+ g^\prime(x)$$
@@ -135,6 +162,7 @@ $$
 Can compute $\to$ $f^\prime(g(x))$ as $f^\prime(x^2+1) = -sin(x^2+1)\\$
 Following: 
 $$f^\prime(g(x))*g^\prime(x) = (-sin(x^2+1))(2x) = -2xsin(x^2+1)$$
+
 
 
 
@@ -328,6 +356,11 @@ Examples of Axioms
 <br>
 
 V={$~(x,y,z)~|~3x-y+5z=0~$}
+
+
+
+
+
 
 
 
