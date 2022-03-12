@@ -1,0 +1,9 @@
+.tables {
+   display: flex;
+}
+
+@media screen and (max-width:878px) {
+   .tables {
+      flex-direction: column;
+   }
+}
