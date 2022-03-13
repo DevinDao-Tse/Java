@@ -258,22 +258,49 @@ $$
 # Math 204
 
 ### System of Linear Equations
-
-
-
+Turn equation into Matrix 
 $$
 \begin{aligned}
-&-x&+2y&-3z=1\\
-&2x&+ &+z=0\\  
-&3x&-4y&+4z=2
+-x&+2y&-3z=1\\
+2x&+&+z=0\\  
+3x&-4y&+4z=2
 \end{aligned}
+~~\to~
+\mathbf{}\left[\begin{array}
+ {rrrr}
+ -1&2&-3&1\\
+ 2&0&1&0\\
+ 3&-4&4&2
+ \end{array}\right]
 $$
+
+Reduce Matrix into echelon or reduced row echelon form
+Solve for variables (go Backwards)
 
 ### Gaussian Elimination
 
 
+
 ### Gauss-Jordan Elimination
 
+$$
+\mathbf{A} = \left[\begin{array}
+  {rrrr}
+  1&\reals &\reals&\reals \\
+  0&1&\dots&\dots\\
+  0&0&1&\dots\\
+  0&0&0&1
+
+\end{array}\right]
+$$
+
+<center>If <b>Last</b> row has the following result will show that the system of equations has</center>
+
+$$
+0 = 0 \to \text{Infinite Solutions}\\
+\reals = \reals\to\text{One Solution}\\
+0 = \reals\to\text{No Solutions}
+$$
 
 ### Matrix/Matrices
 
@@ -292,7 +319,27 @@ $$\mathbf{X} = \left[\begin{array}
   \end{array}\right]
 $$
 
-### Tranpose and Trace
+Finding x when given Matrix A and B;
+<br>
+$Ax = B\to x=A^{-1}B$
+When moving Matrix to other side of equation, results in its <u>__Inverse__</u>
+
+### Tranpose, Trace, Adjoint
+__Tranpose__ of matrix is the resulting matrix of rows are the columns and columns are the rows, denoted by $A^T$
+
+__Adjoint__ is the tranpose of a resulting Cofactor Matrix, denoted by $Adj(A)$
+
+__Trace__ is the resulting product of the diagonal of a matrix, denoted by $tr(A)$
+
+$$
+\mathbf{A} = \left[\begin{array}{rrr} a_{11}&a_{12}&a_{13} \\ a_{21}&a_{22}&a_{33}\\ a_{31}&a_{32}&3_{33} \end{array}\right]
+\to 
+\mathbf{A^T} = \left[\begin{array}{rrr} a_{11}&a_{21}&a_{31} \\ a_{12}&a_{22}&a_{32}\\ a_{13}&a_{23}&3_{33} \end{array}\right]
+\\
+tr(A) = (a_{11}a_{22}a_{33})
+$$
+
+
 
 ### Determinants 
 
@@ -301,7 +348,7 @@ Let $A$ be a matrix. The <u>__Determinant__</u> is denoted by $det(A)$
 
 Determinant of (2 x 2) Matrix
 <br>
-Let $\mathbf{A} = \left[\begin{array}{rr} a&b \\ c&d \end{array}\right]$
+Let $\mathbf{A} = \left[\begin{array}{rr} a&b \\ c&d \end{array}\right]\to~det(A) = (a*d)-(b*c)$ 
 
 Determinant of (3 x 3) Matrix
 <br>
@@ -314,11 +361,74 @@ Determinant of (n x n) Matrix, n >3
 
 Inverse of (2 x 2) Matrix<br>
 <br>
-Let $\mathbf{A} = \left[\begin{array}{rr} a&b \\ c&d \end{array}\right]$
 
+$$
+\mathbf{A} = \left[\begin{array}{rr} a&b \\ c&d \end{array}\right]
+\to
+\mathbf{A^{-1}} = \frac{1}{det(A)}\left[\begin{array}{rr} d&-b \\ -c&a \end{array}\right]
+$$
+
+
+Inverse of a (3 x 3) Matrix
+
+Method 1: using row reduction
+
+Mehtod 2: Using adjugate formula
+
+- Find Determinant of original matrix
+- Tranpose the orginal matrix
+- Find resulting Cofactor of $A^T\to C^T = Adj(A)$
+- Mutiple $det(A)~by~Adj(A)$
+
+$$
+Adj(A) = C^T\\
+A^{-1} = \frac{1}{det(A)}*Adj(A)
+$$
  
+Example.
+
+$$
+\mathbf{A} = \left[\begin{array} 
+{rrr}
+  2&2&3\\
+  3&4&6\\
+  3&3&5\\
+\end{array}\right]
+,~det(A)=1,~
+\mathbf{A^T} = \left[\begin{array} 
+{rrr}
+  2&3&3\\
+  2&4&3\\
+  3&6&5\\
+\end{array}\right]
+\\
+\mathbf{A^{-1}} = \frac{1}{1} \left[\begin{array} 
+{rrr}
+  0&-3&1\\
+  2&3&-2\\
+  -1&-1&1\\
+\end{array}\right]
+$$
+
+
 ### Minor and Cofactor
-Let $\mathbf{A} = \left[\begin{array}{rrr} \end{array}\right]$
+
+Minor 
+
+$$
+Let~\mathbf{A} = \left[\begin{array}{rrr} \end{array}\right]
+$$
+
+$$
+Cofactor~Matrix~=~Minor~Matrix~*
+\mathbf{} \left[\begin{array}
+  {rrr} 
+  +&-&+&\dots\\
+  -&+&-&\dots\\
+  +&-&+&\dots\\
+\end{array}\right]
+$$
+
 
 ### Vectors 
 
