@@ -251,6 +251,26 @@ $$
 \frac{d}{dx}=\frac{u^\prime}{u*ln~a} \longleftrightarrow \frac{d}{dx}(ln~u) =\frac{u^\prime}{u*ln~a}
 $$
 
+### Linearization
+
+### Differentials
+Recall that we use $\frac{dy}{dx}$ before to represent the derivative. We think of the instantaneous rate of change in terms of $y$ with respect to $x$
+$$
+
+$$
+
+$df = f\prime(x)dx~\rightarrow~dy\div dx$
+
+
+### Estimating with Differentials
+We use differentials to approximate values of function
+$$
+f(a+\varDelta x) = f(a)+ \varDelta y~~\\ \text{Using approximation we get,}\\
+\\
+f(a+d)~\approx~f(a)+dy
+$$
+
+Example. 
 
 
 ---
@@ -428,6 +448,8 @@ Cofactor~Matrix~=~Minor~Matrix~*
   +&-&+&\dots\\
 \end{array}\right]
 $$
+
+### Solving Matrices with Cramer's Rule
 
 
 ### Vectors 
