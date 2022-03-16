@@ -3,7 +3,7 @@
 
 # Math Formulas Calculus I
 
-## <u> Functions </u>
+## Functions 
 
 ### Linear Functions
 
@@ -20,6 +20,8 @@ Product - $(f*g)(x) = f(x)g(x)$
 Quotient - $\frac{x}{g}(x)=\frac{f(x)}{g(x)}$ where $g(x)\neq0$ 
 
 ### Composite Functions
+A function within a function
+
 
 ### Exponenetial Functions
 If a > 0 and b > 0, then the properties apply:
@@ -200,14 +202,17 @@ $\begin{aligned}
 
 ----
 ### Trig Functions - Identities
-|    Function    |         Derivative          |
-| :------------: | :-------------------------: |
-| $f(x)= cos(x)$ |    $f^\prime(x)=-sin(x)$    |
-| $f(x)= sin(x)$ |    $f^\prime(x)=cos(x)$     |
-| $f(x)=tan(x)$  |   $f^\prime(x)=sec^2(x)$    |
-| $f(x)=cot(x)$  |  $f^\prime(x)=cosec^2(x)$   |
-| $f(x)=sec(x)$  | $f^\prime(x)=sec(x)tan(x)$  |
-| $f(x)=csc(x)$  | $f^\prime(x)=-csc(x)cot(x)$ |
+|      Function      |                    Derivative                     |
+| :----------------: | :-----------------------------------------------: |
+|   $f(x)= cos(x)$   |               $f^\prime(x)=-sin(x)$               |
+|   $f(x)= sin(x)$   |               $f^\prime(x)=cos(x)$                |
+|   $f(x)=tan(x)$    |              $f^\prime(x)=sec^2(x)$               |
+|   $f(x)=cot(x)$    |             $f^\prime(x)=cosec^2(x)$              |
+|   $f(x)=sec(x)$    |            $f^\prime(x)=sec(x)tan(x)$             |
+|   $f(x)=csc(x)$    |            $f^\prime(x)=-csc(x)cot(x)$            |
+| $f(x)=sin^{-1}(u)$ | $f^\prime(x)=\frac{u\prime}{\sqrt{1-u\prime^2}}$  |
+| $f(x)=cos^{-1}(x)$ | $f^\prime(x)=-\frac{u\prime}{\sqrt{1-u\prime^2}}$ |
+| $f(x)=tan^{-1}(x)$ |     $f^\prime(x)=\frac{u\prime}{1+u\prime^2}$     |
 
 |      Identity       |                          Result                          |
 | :-----------------: | :------------------------------------------------------: |
@@ -218,7 +223,7 @@ $\begin{aligned}
 | $cos^2(x)+sin^2(x)$ |                            1                             |
 
 
-### Differentiation 
+### Implicit Differentiation 
 Split function of y and u
 
 
@@ -273,8 +278,38 @@ $$
 Example. 
 
 
----
+### Applications of Derivatives
+Thereom: (Extreme Value) if $f$ is __continuous__ on a closed interval $[a,b]$, then $f$ attains both an absolute maximum value, $M$, and an absolute minimum value, $m$ in $[a,b]$.
+that is, there exist $x_1~and~x_2$ in $[a,b]$ such that $f(x_1)=M,~f(x_2)=m$ and $m\le f(x)\le M$ 
 
+<!-- If $f$ is not continuous -->
+
+
+### Local Extreme Values
+A function f has a __Local Maximum__ value at a point c within its domain D if $f(x)\le f(c)$ for all $x$ __near__ $c$ in Domain
+
+A function $f$ has a __Local Minimum__ value at point $c$ within its domain $D$ if $f(x)\ge f(c)$ for all x __near__ $c$ in Domain
+
+Thereom - If $f$ has a local min or max at an interval point (not an endpoint), $c$, of its domain and if $f\prime$ is defined at $c$, then $f\prime(c)=0$
+
+$$
+f\prime(c) = \lim_{h\to 0}\frac{f(c+h)-f(c)}{h}~~exist\\
+\begin{aligned}
+Therefore\lim_{h\to 0+}\frac{f(c+h)-f(c)}{h} &=& \lim_{h\to 0-}\frac{f(c+h)-f(c)}{h}\\
+\text{'negative'}=\frac{'negative'}{'positive'} &=&~ \frac{'positive}{'positive} = \text{'positive'}
+\end{aligned}
+
+$$
+
+
+So the derivative must be simultaneously negative and positive, hence must be 0.
+
+
+
+
+
+
+---
 # Math 204
 
 ### System of Linear Equations
@@ -339,6 +374,35 @@ $$\mathbf{X} = \left[\begin{array}
   \end{array}\right]
 $$
 
+### Matrix Algebra
+
+#### Equality
+If two matrices have the __SAME__ corresponding elements and dimensions. It is considered a matrix of Equality.
+
+#### Addition 
+
+#### Substraction
+
+
+#### Scalar
+
+
+
+#### Product
+When finding the product of two matrix, must consider the following dimensions for matrix.
+$$
+\text{Let Matrix A is (2 x 3), Matrix B is (3 x 2)}
+$$
+
+
+### Identify
+Given a (n x n) Matrix. The identity is denoted by $I_n$ where $n$ is the matrix size
+
+Example.
+$$
+\mathbf{A} = 
+$$
+
 Finding x when given Matrix A and B;
 <br>
 $Ax = B\to x=A^{-1}B$
@@ -392,6 +456,18 @@ $$
 Inverse of a (3 x 3) Matrix
 
 Method 1: using row reduction
+$$
+AI_n = A^{-1}\\
+\mathbf{A} = 
+  \left[\begin{array}
+  {rrrrrr}
+  a_{11}&&a_{12}&a_{13}~|~1&0&0\\
+  a_{11}&&a_{12}&a_{13}~|~0&1&0\\
+  a_{11}&&a_{12}&a_{13}~|~0&0&1\\
+  \end{array}\right]
+
+$$
+
 
 Mehtod 2: Using adjugate formula
 
@@ -430,6 +506,7 @@ $$
 \end{array}\right]
 $$
 
+### Elementary Matrix
 
 ### Minor and Cofactor
 
@@ -449,12 +526,13 @@ Cofactor~Matrix~=~Minor~Matrix~*
 \end{array}\right]
 $$
 
-### Solving Matrices with Cramer's Rule
+### Cramer's Rule
+#### Systems of linear Equation/Matrices
+
+
 
 
 ### Vectors 
-
-
 
 Length, Norm or Magnitude of a Vector is given by:
 $$|| \overline{v}|| = \sqrt{v_1^2+v_2^2+\dots}$$
@@ -463,7 +541,31 @@ $||\frac{\overline{v}}{||\overline{v}||}||$
 
 For n-D cases
 
-$\overrightarrow{AB}=\overline{B}- \overline{A} = (B_1-A_1, B_2-A_2, B_3-A_3)$
+
+Given point $\overline{A} = (A_1,A_2,A_3)~and~\overline{B}=(B_1,B_2,B_3)$ 
+$\\\overrightarrow{AB}=\overline{B}- \overline{A} = (B_1-A_1, B_2-A_2, B_3-A_3)$
+
+### Dot Product
+Given two vectors $V~and~U$ hrt
+
+$\overline{V}=(V_1,V_2,V_3),~\overline{U}=(U_1,U,_2,U_3)\\\overline{V}~\dot~\overline{U} = (V_1U_1)+(V_2U_2)+(V_3U_3)$
+
+
+### Cross Product
+Similiar in finding the deterimant of a matrix. Given two vectors $V~and~U$ will result in the product of vector
+$\\\overline{V}=(V_1,V_2,V_3)\\\overline{U}=(U_1,U,_2,U_3)$
+
+$$
+\begin{aligned}
+  \overline{V}~X~\overline{U} &=
+    \mathbf{}\left[\begin{array}
+      {rrr}
+      V_1&V_2&V_3\\
+      U_1&U_2&U_3
+    \end{array}\right]\\
+    &=(V_2U_3-V_3U_2,-(~V_1U_3-V_3U_1~),V_1U_2-V_2U_1)
+  \end{aligned}
+$$
 
 
 ### Vector Space 
@@ -484,20 +586,20 @@ Any __single axiom violation__ is not considered a Real Vector Space
 
 $\alpha~\oplus~\beta$
 
-$\theta$ would normally be $\equiv$ to 0 unless given 
+$\theta$ would normally be $\equiv$ to 0 unless given or resulting in solving equation in $\odot~or~\oplus$ 
 
-| Axiom |                                 Description                                 |                Detail                 |
-| :---: | :-------------------------------------------------------------------------: | :-----------------------------------: |
+| Axiom |                                 Description                                 |                  Detail                  |
+| :---: | :-------------------------------------------------------------------------: | :--------------------------------------: |
 |   1   |                            $\alpha,\beta~\in~V$                             |
 |   2   |                $\alpha~\oplus~\beta$ = $\beta~\oplus~\alpha$                |
-|   3   | $\alpha~\oplus~(\beta~\oplus \gamma) = (\alpha~\oplus~\beta)~\oplus~\gamma$ | $\gamma$ can be anything unless given |
-|   4   |                                                                             |
-|   5   |                                                                             |
-|   6   |                                                                             |
-|   7   |                                                                             |
-|   8   |                                                                             |
-|   9   |                                                                             |
-|  10   |                                                                             |
+|   3   | $\alpha~\oplus~(\beta~\oplus \gamma) = (\alpha~\oplus~\beta)~\oplus~\gamma$ |  $\gamma$ can be anything unless given   |
+|   4   |             $\alpha~\oplus~\theta=\alpha=\theta~\oplus~\alpha$              |
+|   5   |              $\alpha~\oplus~\beta=\theta=\beta~\oplus~\alpha$               |
+|   6   |                          $t\odot\alpha~\epsilon~V$                          |
+|   7   |      $t\odot(\alpha~\oplus~\beta)=(t\odot\alpha)~\oplus~(t\odot\beta)$      |
+|   8   |                $(s+t)\odot a = (s\odot a) \oplus (t\odot a)$                | try to solve to visualize with variables |
+|   9   |           $(st)\odot\alpha = (s\odot\alpha)\oplus(t\odot\alpha)$            |
+|  10   |                               $1\odot\alpha$                                |
 
 Examples of Axioms
 <br>
@@ -506,6 +608,23 @@ V={$~(x,y,z)~|~3x-y+5z=0~$}
 
 
 
+V={$~(x,y)~|x,y~\epsilon~\reals$}<br>
+$\oplus=(x+y)+(x\prime+y\prime)=(x+x\prime,y+y\prime)\\\odot=\text{standard multiplication in }\reals^3$
 
 
+
+
+V={$~(x,y,z)~|x,y,z~\epsilon~\reals$}<br>
+$\oplus =\text{standard addition in } \reals^{3}\\\odot=s(x,y,z) = (sx,y,z)$
+
+
+### Subspace
+Given Vector Space
+Let {$V;\oplus;\odot$}
+
+
+<!-- ```javascript
+let name = 'idk'
+console.log();
+``` -->
 

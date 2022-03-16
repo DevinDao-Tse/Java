@@ -12,6 +12,12 @@ body {
    display: flex;
 }
 
+
+h2 {
+   text-decoration: underline;
+   width: 100%;
+}
+
 @media screen and (max-width:878px) {
    .tables {
       flex-direction: column;
