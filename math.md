@@ -11,7 +11,7 @@ Written as $f(x)= mx+b$ where $m$ is the slope of the linear function.
 
 ### Combining Functions
 
-Sum - $*f+g)(x) = f(x)+g(x)$
+Sum - $(f+g)(x) = f(x)+g(x)$
 
 Difference - $(f-g)(x) = f(x)-g(x)$
 
@@ -44,7 +44,7 @@ $$\log_{a}(b) = c ~~~if~~~ b = a^c \\$$
 
 Examples.
 
-$$\log_{2}(4) = 2 ~~~~ \log_{3}(\frac{1}{3})= -1 ~~~~ log_{a}(a^{100})= 100$$
+
 
 #### Logarithm Properties
 
